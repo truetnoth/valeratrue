@@ -77,4 +77,8 @@ h2 {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  }
+  outline: none;
+}
+.noselect:focus {
+  outline: none;
+}
