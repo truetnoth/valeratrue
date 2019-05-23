@@ -11,3 +11,7 @@ link.addEventListener("mouseout", function() {
   arrow.style.transform = 'translateX(0)';
   arrow.style.transition = 'transform 1s ease';
 });
+
+if (w < 1366) {
+  document.querySelector("h2").textContent = "hi";
+};
