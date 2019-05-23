@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <style>
+    @keyframes color {
+      0% {
+        color: #FF5959;
+        fill: #FF5959;
+      }
+      33% {
+        color: #5980FF;
+        fill: #5980FF;
+      }
+      66% {
+        color: #FFAE59;
+        fill: #FFAE59;
+      }
+      100% {
+        color: #59FF65;
+        fill: #59FF65;
+      }
+    }
+
+    body {
+      padding: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-family: "Century Gothic", sans-serif;
+      font-weight: bold;
+    }
+
+    h2 {
+      font-size: 348px;
+      color: #FFF;
+      font-family: 'Times New Roman', Times, serif;
+      margin: 0;
+    }
+
+    footer {
+      margin-top: 100px;
+    }
+
+    .dd {
+      position: relative;
+      font-family: "Century Gothic", sans-serif;
+      font-size: 28px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      transition: all 1s ease;
+    }
+    .dd:hover {
+      animation: color 1s infinite forwards;
+      cursor: pointer;
+    }
+    
+    .mail {
+      display: block;
+      width: 228px;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 26px;
+      text-decoration: none;
+      color: black;
+      margin-top: 10px;
+
+    }
+      .mail:hover {
+        border-bottom: 1px solid black;
+      }
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Valera Trusevich</h1>
+  </header>
+  <section>
+    <h2>Привет</h2>
+  </section>
+  <footer>
+    <a href="http://valeratrue.com/dd" class="dd">Design diary <svg height="11" viewBox="0 0 19 11" width="19" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd" transform=""><path d="m14.5 1 5.5 9h-11z" transform="matrix(0 1 -1 0 20 -9)"/><path d="m0 4h12v3h-12z"/></g></svg></a>
+    <a href="mailto:truetnoth@gmail.com" class="mail">truetnoth@gmail.com</a>
+  </footer>
+  <script>
+    const link = document.querySelector("a");
+    const arrow = link.querySelector("svg");
+    let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+    let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+
+    link.addEventListener("mouseover", function() {
+      arrow.style.transform = 'translateX(5px)';
+      arrow.style.transition = 'transform 1s ease';
+    });
+    link.addEventListener("mouseout", function() {
+      arrow.style.transform = 'translateX(0)';
+      arrow.style.transition = 'transform 1s ease';
+    });
+
+    
+  </script>
+</body>
+</html>
