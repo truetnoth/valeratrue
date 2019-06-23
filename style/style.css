@@ -1,0 +1,156 @@
+@keyframes color {
+  0% {
+    color: #FF5959;
+    fill: #FF5959;
+  }
+  33% {
+    color: #5980FF;
+    fill: #5980FF;
+  }
+  66% {
+    color: #FFAE59;
+    fill: #FFAE59;
+  }
+  100% {
+    color: #59FF65;
+    fill: #59FF65;
+  }
+}
+
+body {
+  padding-left: 60px;
+  height: calc(100vh - 56px);
+  display: grid;
+  width: 80%;
+}
+
+.social a {
+  margin: 0 10px;
+}
+.social a:first-of-type {
+  margin-left: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.disclaimer {
+  text-decoration: none;
+  color: black;
+}
+.disclaimer:hover {
+  color: #ec520b;
+}
+
+header {
+  padding-top: 10px;
+}
+section {
+  margin: auto;
+}
+
+section p {
+  font-size: 28px;
+  line-height: 36px;
+  font-family: "Inter";
+}
+
+footer {
+  margin-top: auto;
+}
+
+footer div {
+  margin-top: 10px;
+}
+
+marquee {
+  background-color: #FF5959;
+}
+
+h1 {
+  font-size: 36px;
+  font-family: "Century Gothic", sans-serif;
+  font-weight: bold;
+}
+  h1 span {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 26px;
+    font-weight: 100;
+  }
+
+h2 {
+  font-size: 348px;
+  color: #fff;
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+.social {
+  display: flex;
+  width: 400px;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.dd {
+  position: relative;
+  font-family: "Century Gothic", sans-serif;
+  font-size: 28px;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+.dd:hover {
+  animation: color 1s infinite forwards;
+  cursor: pointer;
+}
+
+.social_link {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  text-decoration: none;
+  color: black;
+
+}
+  .social_link:hover {
+    color: #ec520b;
+  }
+
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  outline: none;
+}
+.noselect:focus {
+  outline: none;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+  }
+  h2 {
+    display: none;
+  }
+
+  body {
+    padding-left: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 span {
+    font-size: 18px;
+  }
+  footer {
+    padding-bottom: 40px;
+  }
+  .social {
+    width: 100%;
+  }
+}
