@@ -29,19 +29,12 @@ link.addEventListener("mouseout", function() {
 
 const main_section = document.querySelector(".main_section");
 const disclaimer_section = document.querySelector(".disclaimer_section");
-const switch_button = document.querySelector(".switcher");
 const button = document.querySelector(".disclaimer");
 
 button.addEventListener('click', function(evt) {
   evt.preventDefault();
   disclaimer_section.classList.toggle("hidden");
   main_section.classList.toggle("hidden");
-  switch_button.classList.toggle("hidden");
-});
-
-switch_button.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  
 });
 
 

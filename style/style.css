@@ -1,4 +1,4 @@
-@keyframes color {
+/* @keyframes color {
   0% {
     color: #FF5959;
     fill: #FF5959;
@@ -15,7 +15,7 @@
     color: #59FF65;
     fill: #59FF65;
   }
-}
+} */
 
 body {
   padding-left: 60px;
@@ -53,7 +53,7 @@ section {
 section p {
   font-size: 28px;
   line-height: 36px;
-  font-family: "Inter";
+  font-family: sans-serif;
 }
 
 footer {
@@ -70,19 +70,19 @@ marquee {
 
 h1 {
   font-size: 36px;
-  font-family: "Century Gothic", sans-serif;
+  font-family: sans-serif;
   font-weight: bold;
 }
   h1 span {
-    font-family: "Times New Roman", sans-serif;
+    font-family: serif;
     font-size: 26px;
     font-weight: 100;
   }
 
 h2 {
-  font-size: 348px;
+  font-size: 26vw;
   color: #fff;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: serif;
   margin: 0;
 }
 
@@ -95,19 +95,21 @@ h2 {
 
 .dd {
   position: relative;
-  font-family: "Century Gothic", sans-serif;
+  font-family: sans-serif;
   font-size: 28px;
   color: black;
   text-decoration: none;
   font-weight: bold;
 }
 .dd:hover {
-  animation: color 1s infinite forwards;
+  /* animation: color 1s infinite forwards; */
+  color: #ec520b;
+  fill: #ec520b;
   cursor: pointer;
 }
 
 .social_link {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: serif;
   font-size: 26px;
   text-decoration: none;
   color: black;
@@ -144,13 +146,17 @@ h2 {
 }
 
 @media (max-width: 450px) {
-  h1 span {
+  /* h1 span {
     font-size: 18px;
-  }
-  footer {
+  } */
+  /* footer {
     padding-bottom: 40px;
-  }
+  } */
   .social {
     width: 100%;
+    flex-direction: column;
+  }
+  .social a {
+    margin: 0;
   }
 }
