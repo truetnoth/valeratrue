@@ -2,20 +2,6 @@ const link = document.querySelector(".dd");
 const arrow = link.querySelector("svg");
 let w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
 let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-//let greetings = ['Salut', 'Hello', 'Привiт', 'Gruß', 'Ciao', 'Привет'];
-// let greetings = ['Привiт', 'Привет'];
-// let counter = 0;
-
-// const changeNameInTime = function() {
-//   document.querySelector("h2").textContent = greetings[counter];
-//   counter += 1;
-//   if (counter >= greetings.length) {
-//     counter = 0;
-//   }
-// }
-
-//let timerId = setInterval(changeNameInTime, 500);
-
 
 link.addEventListener("mouseover", function() {
   arrow.style.transform = 'translateX(5px)';
@@ -59,3 +45,5 @@ var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 if (isSafari && iOS) {
   document.querySelector("footer").style.paddingBottom = "96px";
 }
+
+console.log("Привет! 👨🏼‍🏫");
