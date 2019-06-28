@@ -46,4 +46,8 @@ if (isSafari && iOS) {
   document.querySelector("footer").style.paddingBottom = "50px";
 }
 
+document.addEventListener('touchmove', function(e) {
+  e.preventDefault();
+}, {passive:false});
+
 console.log("Привет! 👨🏼‍🏫");
