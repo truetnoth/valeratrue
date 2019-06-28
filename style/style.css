@@ -127,6 +127,12 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  html, body {
+    overflow-x: hidden;
+  }
+  body {
+    position: relative;
+  }
   .social {
     width: 100%;
     flex-direction: column;
