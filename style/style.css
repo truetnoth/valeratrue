@@ -127,6 +127,9 @@ h2 {
 }
 
 @media (max-width: 450px) {
+  body {
+    height: calc(100vh - 86px);
+  }
   .social {
     width: 100%;
     flex-direction: column;
