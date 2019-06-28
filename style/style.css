@@ -84,7 +84,6 @@ h2 {
   font-weight: bold;
 }
 .dd:hover {
-  /* animation: color 1s infinite forwards; */
   color: #ec520b;
   fill: #ec520b;
   cursor: pointer;
@@ -134,5 +133,8 @@ h2 {
   }
   .social a {
     margin: 0;
+  }
+  .social a:active {
+    color: black;
   }
 }
