@@ -43,7 +43,7 @@ var isSafari = !!navigator.userAgent.match(/Version\/[\d\.]+.*Safari/);
 var iOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
 
 if (isSafari && iOS) {
-  document.querySelector("footer").style.paddingBottom = "96px";
+  document.querySelector("footer").style.paddingBottom = "50px";
 }
 
 console.log("Привет! 👨🏼‍🏫");
